@@ -1,4 +1,4 @@
-package br.com.fiap.global_solution_java_2025.controller;
+package br.com.fiap.global_solution.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
