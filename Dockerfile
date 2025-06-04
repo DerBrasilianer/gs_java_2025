@@ -19,7 +19,7 @@ EXPOSE 8080
 WORKDIR /app
 
 # Copia o JAR gerado
-COPY --from=build /app/target/gloal_solution-0.0.1-SNAPSHOT.jar app.jar
+COPY --from=build /app/target/global_solution-0.0.1-SNAPSHOT.jar app.jar
 
 # Comando para iniciar a aplicação
 ENTRYPOINT ["java", "-jar", "app.jar"]
