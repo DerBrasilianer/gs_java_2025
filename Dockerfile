@@ -1,20 +1,17 @@
-FROM ubuntu:latest AS build
-
-RUN apt-get update && apt-get install -y openjdk-17-jdk maven
+# Stage 1: build com JDK 21
+FROM eclipse-temurin:21-jdk AS build
 
 WORKDIR /app
 
 COPY pom.xml .
 COPY src ./src
 
-RUN mvn clean install -DskipTests
+RUN ./mvnw clean install -DskipTests || mvn clean install -DskipTests
 
-FROM openjdk:17-jdk-slim
+# Stage 2: runtime com JDK 21 slim
+FROM eclipse-temurin:21-jdk-jammy
 
 EXPOSE 8080
-
 WORKDIR /app
-
 COPY --from=build /app/target/gloal_solution-0.0.1-SNAPSHOT.jar app.jar
-
 ENTRYPOINT ["java", "-jar", "app.jar"]
