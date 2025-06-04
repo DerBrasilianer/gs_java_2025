@@ -135,9 +135,9 @@ ou
 ### 🚀 Deploy
 A aplicação foi disponibilizada em ambiente de nuvem, garantindo acesso remoto e escalabilidade.
 
-🔗 Link de acesso ao sistema: https://seu-deploy-aqui.com
+🔗 Link de acesso ao sistema: [Deploy do Projeto](https://gs-java-2025.onrender.com/swagger-ui/index.html)
 
 🎬 Vídeo Demonstração
 Assista ao vídeo explicativo com a apresentação da arquitetura, exemplos de uso da API e funcionamento geral da solução:
 
-📽️ Link para o vídeo no YouTube (não listado)
+📽️ Link para o vídeo no YouTube (não listado)? [Vídeo Pitch](https://gs-java-2025.onrender.com/swagger-ui/index.html)
