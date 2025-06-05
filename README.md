@@ -140,6 +140,6 @@ A aplicação foi disponibilizada em ambiente de nuvem, garantindo acesso remoto
 🎬 Vídeo Demonstração
 Assista ao vídeo explicativo com a apresentação da arquitetura, exemplos de uso da API e funcionamento geral da solução:
 
-📽️ Link para o vídeo Pitch no YouTube (não listado)? [Vídeo Pitch](https://www.youtube.com/watch?v=e16K1S7MDR4&feature=youtu.be)
+📽️ Link para o vídeo Pitch no YouTube (não listado): [Vídeo Pitch](https://www.youtube.com/watch?v=e16K1S7MDR4&feature=youtu.be)
 
-📽️ Link para o funcionamento completo no YouTube (não listado)? [Funcionamento Completo](https://www.youtube.com/watch?v=j-bkpsTq67Y&feature=youtu.be)
+📽️ Link para o funcionamento completo no YouTube (não listado): [Funcionamento Completo](https://www.youtube.com/watch?v=j-bkpsTq67Y&feature=youtu.be)
