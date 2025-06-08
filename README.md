@@ -4,6 +4,50 @@ Projeto desenvolvido para o **Challenge FIAP 2025**, que consiste em uma **API R
 
 ---
 
+## 👨‍💻 Comandos Conteinerização
+
+```sudo usermod -aG docker admlnx```
+
+```exit```
+
+```git clone https://github.com/DerBrasilianer/gs_java_2025```
+
+```cd gs_java_2025```
+
+```docker build -t api_java .```
+
+```docker network create gs_network```
+
+```docker volume create oracle-xe-data```
+
+```
+docker run -d \
+  --name oracle-xe \
+  --network gs_network \
+  -p 1521:1521 \
+  -e ORACLE_PWD=fiap24 \
+  -e ORACLE_CHARACTERSET=AL32UTF8 \
+  -v oracle-xe-data:/opt/oracle/oradata \
+  container-registry.oracle.com/database/express:21.3.0-xe
+```
+
+```docker container logs -f oracle-xe```
+
+```
+docker run -d \
+  --name java-gs \
+  --network gs_network \
+  -p 8080:8080 \
+  -e SPRING_DATASOURCE_URL=jdbc:oracle:thin:@oracle-xe:1521/XE \
+  -e SPRING_DATASOURCE_USERNAME=SYSTEM \
+  -e SPRING_DATASOURCE_PASSWORD=fiap24 \
+  api_java
+```
+
+---
+
+---
+
 ## 👨‍💻 Integrantes - Grupo LTAKN
 
 - **Enzo Prado Soddano** – RM: 557937  
