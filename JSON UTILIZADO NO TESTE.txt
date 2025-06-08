@@ -1,0 +1,5 @@
+{
+  "nome": "Maçã",
+  "tipo": "Alimento",
+  "unidadeMedida": "Pacote"
+}
